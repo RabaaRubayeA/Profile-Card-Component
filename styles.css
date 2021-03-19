@@ -1,0 +1,257 @@
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: KumbhSans;
+
+}
+
+@font-face{
+    font-family: KumbhSans;
+    src: url("./KumbhSans-Regular.ttf");
+}
+/* html{
+    display: flex;
+    place-items: center;
+} */
+/* body{
+   
+    justify-content: center;
+
+    font-family: KumbhSans;
+} */
+
+
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background:hsl(185, 75%, 39%);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#circle1{
+    position: absolute;
+    /* transform: rotate(40deg); */
+    bottom:40%;
+    right: 48%;
+}
+#circle2{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+
+}
+#card{
+    z-index: 1;
+    width: 300px;
+    height: 350px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#pattern{
+    width:100%;
+    height: auto;
+}
+
+#photo{
+    position: absolute;
+    transform: translateY(65%);
+
+    border: solid 4px white;
+    border-radius: 50%;
+}
+#card-info{
+    height: 50%;
+    width: 100%;
+    padding: 4% 0;
+    transform: translateY(35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#personal{
+    height: 50%;
+    transform: translateY(-15%);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+
+}
+span, .light-text{
+    color:hsl(0, 0%, 59%);
+}
+p, .numbwer{
+    /* font-size: .9rem; */
+    font-size: 18px;
+    font-weight: 700;
+}
+.light-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+#social-accounts{
+    height: 60%;
+    display: flex;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    border-top: solid 1px hsl(0, 6%, 91%);
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-device-width: 740px){
+    #container{
+        height: 90vh;
+        width: 90vw;
+        margin: 5vh 5vw;
+    }
+    .circles{
+        height: 500px;
+        width: 500px;
+    }
+    #circle1{
+        position: absolute;
+        /* transform: rotate(40deg); */
+        bottom:40%;
+        right: 52%;
+    }
+    #circle2{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+    
+    }
+    #card{ 
+        width: 35%;
+        height: 70%;
+    }
+    #pattern{
+        height: 35%;
+    }
+    #photo{
+        width:35%;
+        height: auto;
+        transform: translateY(45%);
+    }
+    #card-info{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* justify-self: flex-end; */
+    }
+    #social-accounts{
+        padding-bottom: 2%;
+
+    }
+    p, .numbwer{
+        /* font-size: .9rem; */
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .light-text{
+        font-size: .7rem;
+        font-weight: 400;
+    }
+}
+
+
+
+
+@media (max-device-width: 370px){
+    #cojntainer{
+        height: 100vh;
+        width: 100vw;
+        background:hsl hsl(227, 10%, 46%);
+        /* overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         */
+    }
+    #circle1{
+        bottom:60% ;
+    }
+    #circle2{
+        position: absolute;
+        left: 40%;
+        top: 50%;
+    
+    }
+    #pattern{
+        width: 100%;
+        height: auto;
+    }
+    #card{ 
+        width: 85%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #photo{position: absolute;
+        width:35%;
+        height: auto;
+        transform: translateY(65%);
+
+    }
+    
+    #card-info{
+        height: 50%;
+    }
+    #social-accounts{
+        margin-top: 10%;
+        margin-bottom: 3%;
+
+
+    }
+    p, .numbwer{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    p.light-text{
+        font-size: .8rem;
+       
+    }
+
+}
+/* 
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
